@@ -3203,7 +3203,11 @@ input[type="button"].btn-block {
   opacity: 0;
 }
 
-.collapse:not(.show) {
+.collapse-open {
+  display: block;
+}
+
+.collapse-closed {
   display: none;
 }
 

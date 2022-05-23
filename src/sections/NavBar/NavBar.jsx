@@ -1,5 +1,5 @@
 // hooks
-import React from "react";
+import React, {useState} from "react";
 // {useState, useEffect, useRef} 
 
 // Router
@@ -13,17 +13,23 @@ import '../../styles/bootstrap.css'
 
 function NavBar() {
     
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle= () => {
+		setToggle(!toggle);
+	}
+
     return (
       <>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a href="index.html" class="navbar-brand">CIPLA S.C.<span class="text-primary"> Abogados</span></a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" onClick={handleToggle}  data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse collapse" id="navbarContent">
+            <div className={`navbar-collapse ${toggle ? 'collapse-open' : 'collapse-closed'}`} id="navbarContent">
               <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
                 <li class="nav-item">
                   <a href="/html/about.html" class="nav-link">Sobre nosotros</a>
