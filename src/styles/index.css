@@ -49,3 +49,8 @@ body {
   .text-xl {
     font-size: 21px !important;
   } 
+
+  /* general Styles */
+  .subhead{
+    color:#AFB7C1;
+  }

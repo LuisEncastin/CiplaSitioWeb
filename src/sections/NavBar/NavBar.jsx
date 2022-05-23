@@ -10,6 +10,7 @@ import React, {useState} from "react";
 
 // style
 import '../../styles/bootstrap.css' 
+import './NavBar.css'
 
 function NavBar() {
     
@@ -21,7 +22,7 @@ function NavBar() {
 
     return (
       <>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a href="index.html" class="navbar-brand">CIPLA S.C.<span class="text-primary"> Abogados</span></a>
 

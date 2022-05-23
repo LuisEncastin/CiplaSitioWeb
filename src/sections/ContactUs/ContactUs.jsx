@@ -1,9 +1,12 @@
 import React from 'react'
 
+// styles
+import './ContactUs.css'
+
 const ContactUs = () => {
   return (
     <>
-    <div class="page-section" id="contactUs">
+    <div class="page-section contactUsSection" id="contactUs">
       <div class="container">
         <div class="text-center">
           <h2 class="title-section mb-3">Contáctanos</h2>

@@ -1,0 +1,10 @@
+.navbar{
+    background-color: white;
+}
+
+.navbar-nav li{
+    font-size: 1.2rem;
+}
+.navbar-nav li:hover{
+    font-size: 1.2rem;
+}

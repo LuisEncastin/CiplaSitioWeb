@@ -35,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "build_staging": "PUBLIC_URL=https://www.luisencastin.com/ react-scripts build"
 }

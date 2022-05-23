@@ -1,5 +1,8 @@
 import React from 'react'
 
+// styles
+import './Footer.css'
+
 const Footer = () => {
   return (
     <>
@@ -46,8 +49,10 @@ const Footer = () => {
       <hr/>
 
       <div class="row mt-4">
-        <div class="col-md-6">
-          <p>Copyright 2022. Website designed by<a href="/" target="_blank"> Luis Encastin</a></p>
+        <div class="col-md-6" className='copyright'>
+          
+          <p><strong>Copyright 2022.</strong><br />
+          Website designed by<a href="/" target="_blank"> Luis Encastin</a></p>
         </div>
         <div class="col-md-6 text-right">
           <div class="sosmed-button">
