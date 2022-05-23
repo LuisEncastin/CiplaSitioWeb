@@ -35,10 +35,13 @@
     top: 2.5rem;
 }
 .introPrincipalContainer img{
-    outline: 1px solid red;
-    width: 15rem;
+    width: 24rem;
     height: 10rem;
     margin: 0 0 5rem 0;
+}
+
+.introPrincipalContainer h2{
+    color: #adacac;
 }
 
 @media (max-width:768px) {
@@ -58,9 +61,8 @@
         top: 0;
     }
     .introPrincipalContainer img{
-        outline: 1px solid red;
-        width: 10rem;
-        height: 8rem;
+        width: 12rem;
+        height: 6rem;
         margin: 1rem 0 1rem 0;
     }
     .introPrincipalContainer h1 {

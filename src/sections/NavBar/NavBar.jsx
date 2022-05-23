@@ -8,6 +8,9 @@ import React, {useState} from "react";
 // import ContactUs from "../ContactUs/ContactUs";
 // import OurServices from "../OurServices/OurServices";
 
+// assets
+import logo from '../../assets/img/CiplaLogo.jpeg';
+
 // style
 import '../../styles/bootstrap.css' 
 import './NavBar.css'
@@ -21,10 +24,11 @@ function NavBar() {
 	}
 
     return (
-      <>
+      <div >
         <nav className="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a href="index.html" class="navbar-brand">CIPLA S.C.<span class="text-primary"> Abogados</span></a>
+
+            <a href="index.html" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
 
             <button class="navbar-toggler" onClick={handleToggle}  data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -55,7 +59,7 @@ function NavBar() {
             </div>
           </div>
         </nav>          
-      </>
+      </div>
     );
   };
 

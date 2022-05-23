@@ -1,12 +1,4 @@
 .page-footer{
-    /* width:'100%';
-    height: 55vh;
-    background-color: rgb(19, 29, 85);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     position: relative;
     display: block;
     padding-top: 50px;
@@ -19,8 +11,16 @@
 
 .page-footer .footer-menu li {
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
+.page-footer .footer-menu li a{
+    color: #fff;
+}
+.page-footer .footer-menu li a:hover{
+    text-decoration: none;
+    color: #2F89FC;
+}
+
 
 .page-footer .copyright{
     width: 100%;
