@@ -1,11 +1,12 @@
 .servicesSection{
     width:'100%';
-    height: 100vh;
+    height: auto;
     background-color: #f4f4fa;;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
 }
 
 /* services component */
@@ -14,8 +15,9 @@
     background-color: #f4f4fa;
 }
 .service-wrap{
-margin: 1rem;
+    margin: 1rem;
 }
+
 .service-wrap h5{
     width: 250px;
     position: absolute;
@@ -25,8 +27,14 @@ margin: 1rem;
     margin-top: 10rem;
     margin-left: 2.5rem;
     box-shadow: 0px 2px 4px 1px #adacac;
+    cursor: pointer;
 }
-
+.service-wrap h5:hover{
+    color: #fff;
+    transition: 0.2s;
+    background-color: #2F89FC;
+    transform: scale(1.03);
+}
 .service-container{
     width: auto;
     height: auto;
@@ -48,26 +56,154 @@ margin: 1rem;
 }
 .service-content{
     width: 320px;
-    height: 130px;
+    height: 140px;
     color: black;
+    font-size: 1.1rem;
     background-color: #fff;
-    padding: 1rem 1.5rem 0.5rem;
+    padding: 4rem 1.5rem 1rem;
     border-radius: 0 0 8px 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
-.service-content:hover{
-    color: #fff;
+
+.callToAction{
+    text-align: end;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    color: #2F89FC;
+}
+/* .callToAction:hover{
+    transform: scale(1.06);
     transition: 0.2s;
-    background-color: #2F89FC ;
-}
+} */
 
   @media (max-width:768px) {
     .servicesSection{
         height: auto;        
         padding: 4rem 0;
+    }
+}
+
+/* ourServices */
+
+#services h4{
+    margin: 2rem 0 1rem;
+}
+
+#serviceDescription{
+    color: #212529;
+    text-decoration: none;
+}
+
+/* services list */
+
+#servicesList {  
+    width: 100%;
+    margin: 1rem 0 2rem;
+    padding: 1.5rem 1rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 9rem);
+    gap: 0px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "servicio1 servicio8 servicio15"
+      "servicio2 servicio9 servicio16"
+      "servicio3 servicio10 servicio17"
+      "servicio4 servicio11 servicio18"
+      "servicio5 servicio12 servicio19"
+      "servicio6 servicio13 servicio20"
+      "servicio7 servicio14 servicio21";
+    border-radius: 15px;
+    /* box-shadow: 0px 2px 4px 1px #adacac; */
+  }
+
+  .ciplaService{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      cursor: pointer;
+      -webkit-box-shadow: 1px 5px 10px -10px #000000; 
+        box-shadow: 4px 5px 10px -10px #000000;
+  }
+  .ciplaService:hover{
+      transform: scale(1.03);
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px 1px #adacac;
+      background-color: #fff;
+  }
+  
+  .servicio1 { grid-area: servicio1; }
+  
+  .servicio2 { grid-area: servicio2; }
+  
+  .servicio3 { grid-area: servicio3; }
+  
+  .servicio4 { grid-area: servicio4; }
+  
+  .servicio5 { grid-area: servicio5; }
+  
+  .servicio6 { grid-area: servicio6; }
+  
+  .servicio7 { grid-area: servicio7; }
+  
+  .servicio8 { grid-area: servicio8; }
+  
+  .servicio9 { grid-area: servicio9; }
+  
+  .servicio10 { grid-area: servicio10; }
+  
+  .servicio11 { grid-area: servicio11; }
+  
+  .servicio12 { grid-area: servicio12; }
+  
+  .servicio13 { grid-area: servicio13; }
+  
+  .servicio14 { grid-area: servicio14; }
+  
+  .servicio15 { grid-area: servicio15; }
+  
+  .servicio16 { grid-area: servicio16; }
+  
+  .servicio17 { grid-area: servicio17; }
+  
+  .servicio18 { grid-area: servicio18; }
+  
+  .servicio19 { grid-area: servicio19; }
+  
+  .servicio20 { grid-area: servicio20; }
+  
+  .servicio21 { grid-area: servicio21; }
+  
+  @media (max-width:768px) {
+    #servicesList  {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .ciplaService{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 5px 10px -10px #000000; 
+        box-shadow: 4px 5px 10px -10px #000000;
+    }
+    .ciplaService:hover{
+        transform: scale(1.03);
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px 1px #adacac;
+        background-color: #fff;
     }
 }

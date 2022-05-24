@@ -37,7 +37,7 @@ function NavBar() {
             <div className={`navbar-collapse ${toggle ? 'collapse-open' : 'collapse-closed'}`} id="navbarContent">
               <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
                 <li class="nav-item">
-                  <a href="/nosotros" class="nav-link">Sobre nosotros</a>
+                  <a href="/nosotros" class="nav-link">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a href="/servicios" class="nav-link">Servicios</a>

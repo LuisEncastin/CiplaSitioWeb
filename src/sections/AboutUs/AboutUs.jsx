@@ -7,7 +7,7 @@ import reunionImage from '../../assets/img/about.jpg'
 import './AboutUs.css'
 
 const AboutUs = () => {
-  return (
+  return ( 
     <>
       <div class="page-section aboutUsSection" id="aboutUs">
         <div class="container">

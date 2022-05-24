@@ -35,6 +35,9 @@ const OurTeam = () => {
           <div class="subhead">Nuestro equipo</div>
           <h2 class="title-section" >Nuestro equipo de expertos en Cipla Abogados S.C.</h2>
         </div>
+        <p className='profesionistas'>
+        Contamos con un amplio grupo de Licenciados en Derecho, todos con conocimientos y experiencia suficiente para asesorar y representar a nuestros clientes con calidad y profesionalismo, coordinados por los Mtros. en D. LUIS ENRIQUE MENDOZA DOSAL y JOSE LUIS PEÑA COLÍN.
+        </p>
         <div class="teamMembersContainer">
         <TeamMemberComponent nombre={socios[0].nombre} trayectoria={socios[0].trayectoria} foto={socios[0].foto}/>
         <TeamMemberComponent nombre={socios[1].nombre} trayectoria={socios[1].trayectoria} foto={socios[1].foto}/>

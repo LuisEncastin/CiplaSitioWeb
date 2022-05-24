@@ -1,5 +1,8 @@
 import React from 'react'
 
+// assets
+import logo from '../../assets/img/CiplaLogo.jpeg';
+
 // styles
 import './Footer.css'
 
@@ -10,7 +13,7 @@ const Footer = () => {
     <div class="container">
       <div class="row">
         <div class="col-lg-3 py-3">
-          <h3><a href="index.html" class="navbar-brand">CIPLA S.C.<span class="text-primary"> Abogados</span></a></h3>
+          <a href="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
         </div>
         <div class="col-lg-3 py-3">
           <h5>Contacto</h5>
@@ -33,7 +36,7 @@ const Footer = () => {
             </li>
             <li class="nav-item">
               <a href="/contacto" class="nav-link">Contacto</a>
-            </li>
+            </li> 
           </ul>
         </div>
         <div class="col-lg-3 py-3">

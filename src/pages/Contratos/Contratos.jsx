@@ -1,8 +1,13 @@
 import React from 'react'
 
+// componentes
+import OurContracts from '../../sections/OurContracts/OurContracts'
+
 const Contratos = () => {
   return (
-    <div>Contratos</div>
+    <>
+      <OurContracts/>
+    </>
   )
 }
 
