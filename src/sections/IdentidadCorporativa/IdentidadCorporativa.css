@@ -1,0 +1,70 @@
+#identidadCorporativaLayer{
+    background: url('../../assets//img/pexels-rodnae-productions-5922211.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#identidadCorporativaSection{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgba(48,136,246,0.4) 3%, rgba(9,86,121,0.6) 60%);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 5rem 0;
+}
+.identidadContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+ 
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    text-align: center;
+    padding: 0 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 1px #302f2f;
+    background-color: #ffffff;
+}
+.value:hover{
+    background-color: #2F89FC;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    #identidadCorporativaSection{
+        width: 100%;
+        height: auto;
+        background-color: #f4f4fa;
+        padding: 3rem 0;
+    }
+    .identidadContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0 1rem;   
+    }
+    .value{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0px 2px 4px 1px #adacac;
+        margin: 1rem 0;
+    }
+}

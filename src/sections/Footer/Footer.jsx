@@ -23,13 +23,16 @@ const Footer = () => {
           <h5>Navegación</h5>
           <ul class="footer-menu">
             <li class="nav-item">
-              <a href="/html/about.html">Sobre nosotros</a>
+                    <a href="/nosotros" class="nav-link">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="/html/services.html">Servicios</a>
+              <a href="/servicios" class="nav-link">Servicios</a>
             </li>
-            <li>
-              <a href="/html/contact.html">Contacto</a>
+            <li class="nav-item">
+              <a href="/contratos" class="nav-link">Contratos</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contacto" class="nav-link">Contacto</a>
             </li>
           </ul>
         </div>
@@ -37,10 +40,10 @@ const Footer = () => {
           <h5>Legal</h5>
           <ul class="footer-menu">
             <li class="nav-item">
-              <a href="/html/terminosYCondiciones.html" target="_blank">Términos y condiciones</a>
+              <a href="/terminosYCondiciones.html" target="_blank">Términos y condiciones</a>
             </li>
             <li class="nav-item">
-              <a href="/html/AvisoDePrivacidad.html" target="_blank">Aviso de privacidad</a>
+              <a href="/AvisoDePrivacidad.html" target="_blank">Aviso de privacidad</a>
             </li>
           </ul>
         </div>

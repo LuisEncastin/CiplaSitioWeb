@@ -28,7 +28,7 @@ function NavBar() {
         <nav className="navbar navbar-expand-lg navbar-light">
           <div class="container">
 
-            <a href="index.html" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
+            <a href="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
 
             <button class="navbar-toggler" onClick={handleToggle}  data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -37,22 +37,22 @@ function NavBar() {
             <div className={`navbar-collapse ${toggle ? 'collapse-open' : 'collapse-closed'}`} id="navbarContent">
               <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
                 <li class="nav-item">
-                  <a href="/html/about.html" class="nav-link">Sobre nosotros</a>
+                  <a href="/nosotros" class="nav-link">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/html/services.html" class="nav-link">Servicios</a>
+                  <a href="/servicios" class="nav-link">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/html/contact.html" class="nav-link">Contacto</a>
+                  <a href="/contratos" class="nav-link">Contratos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/html/contratos.html" class="nav-link">Contratos</a>
+                  <a href="/contacto" class="nav-link">Contacto</a>
                 </li>
                 {/* <li class="nav-item">
                   <a href="/" class="nav-link">Recursos</a>
                   <ul>
-                    <li><a href="/html/faq.html">Preguntas frecuentes</a></li>
-                    <li><a href="/html/blog.html">Blog</a></li>
+                    <li><a href="/faq.html">Preguntas frecuentes</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
                   </ul>  
                 </li> */}
               </ul>

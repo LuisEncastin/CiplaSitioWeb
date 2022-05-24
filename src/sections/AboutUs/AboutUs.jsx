@@ -18,7 +18,7 @@ const AboutUs = () => {
 
               <p>En "CIPLA, S.C. Abogados" somos una firma de que se dedica a proveer todos los servicios jurídicos y profesionales relacionados con el ámbito laboral, con el compromiso firme de brindar a nuestros clientes de respuestas, asesoría y acompañamiento permanente en la solución y manejo de las relaciones de trabajo y sus conflictos.</p>
 
-              <a href="/html/about.html" class="btn btn-primary mt-4">Conoce más sobre nosotros.</a>
+              <a href="/nosotros" class="btn btn-primary mt-4">Conoce más sobre nosotros.</a>
             </div>
             <div class="col-lg-6 py-3">
               <div class="about-img">

@@ -18,10 +18,10 @@ const Intro = () => {
       <div class="introPrincipalContainer">
         <img src={logo} alt="LOGO CIPLA"/>
         <h1 class="mb-4 gancho">
-          Soluciones claras y efectivas a necesidades concretas. <br/>
+          Consultoría integral en procedimiento laboral y amparo <br/>
         </h1>
         <h2>
-          Consultoría integral en procedimiento laboral y amparo <br/>
+          Soluciones claras y efectivas a necesidades concretas. <br/>
         </h2>
       </div>
     </div> 
