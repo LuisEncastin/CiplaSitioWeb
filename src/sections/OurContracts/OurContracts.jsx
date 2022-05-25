@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import ContratoComponent from '../../Components/ContratoComponent'
+import LandingContractComponent from '../../Components/LandingContractComponent'
 
 // styles
 import './OurContracts.css'
@@ -42,7 +43,7 @@ const OurContracts = () => {
     ]
 
     const [displayContract, setDisplayContract] = useState({
-        contratoDefaultDisplay: false,
+        contratoDefaultDisplay: true,
         contrato1Display: false,
         contrato2Display: false,
         contrato3Display: false,
@@ -51,34 +52,74 @@ const OurContracts = () => {
     })
 
     const handleDisplayContrato1 =()=>{
-        setDisplayContract({...displayContract, contratoDefaultDisplay: false, contrato1Display: true })
-    }
-    const handleDisplayContrato2 =()=>{
-        setDisplayContract({...displayContract, contratoDefaultDisplay: false, contrato2Display: true })
-    }
-    const handleDisplayContrato3 =()=>{
-        setDisplayContract({...displayContract, contratoDefaultDisplay: false, contrato3Display: true })
-    }
-    const handleDisplayContrato4 =()=>{
-        setDisplayContract({...displayContract, contratoDefaultDisplay: false, contrato4Display: true })
-    }
-    const handleDisplayContrato5 =()=>{
-        setDisplayContract({...displayContract, contratoDefaultDisplay: false, contrato5Display: true })
-    }
-
-    const handleShowDefault =()=>{
         setDisplayContract({
-            contratoDefaultDisplay: true,
-            contrato1Display: false,
+            contratoDefaultDisplay: false,
+            contrato1Display: true,
             contrato2Display: false,
             contrato3Display: false,
             contrato4Display: false,
             contrato5Display: false,
         })
     }
+    const handleDisplayContrato2 =()=>{
+        setDisplayContract({
+            contratoDefaultDisplay: false,
+            contrato1Display: false,
+            contrato2Display: true,
+            contrato3Display: false,
+            contrato4Display: false,
+            contrato5Display: false,
+        })
+    }
+    const handleDisplayContrato3 =()=>{
+        setDisplayContract({
+            contratoDefaultDisplay: false,
+            contrato1Display: false,
+            contrato2Display: false,
+            contrato3Display: true,
+            contrato4Display: false,
+            contrato5Display: false,
+        })
+    }
+    const handleDisplayContrato4 =()=>{
+        setDisplayContract({
+            contratoDefaultDisplay: false,
+            contrato1Display: false,
+            contrato2Display: false,
+            contrato3Display: false,
+            contrato4Display: true,
+            contrato5Display: false,
+        })
+    }
+    const handleDisplayContrato5 =()=>{
+        setDisplayContract({
+            contratoDefaultDisplay: false,
+            contrato1Display: false,
+            contrato2Display: false,
+            contrato3Display: false,
+            contrato4Display: false,
+            contrato5Display: true,
+        })
+    }
+
+    const [displayContractModal, setDisplayContractModal] = useState(false);
+
+    const handleContractModal =()=>{
+        setDisplayContractModal(!displayContractModal);
+    }
 
   return (
     <>
+
+    {   displayContractModal === true
+    ?   <LandingContractComponent
+            displayContractModal={displayContractModal} 
+            setDisplayContractModal={setDisplayContractModal}
+            handleContractModal={handleContractModal}
+        />
+    :   null
+    }
+
     <section id='OurContracts'>
         <p class="text-center">
             <strong>El Contrato Individual de Trabajo es un acto jurídico indispensable y obligatorio, por medio del cual se hacen constar las condiciones generales de trabajo pactadas entre el trabajador y el patrón.</strong><br/>
@@ -86,11 +127,11 @@ const OurContracts = () => {
         <div id="contratos">
             <div class="contratos-wrapper">
                 <ul class="contratos-list parent">
-                    <li id="contrato1" class="contrato contrato1" onMouseOver={handleDisplayContrato1} onMouseLeave={handleShowDefault}>{infoContratos[1].nombreContrato}</li>
-                    <li id="contrato2" class="contrato contrato2" onMouseOver={handleDisplayContrato2} onMouseLeave={handleShowDefault}>{infoContratos[2].nombreContrato}</li>
-                    <li id="contrato3" class="contrato contrato3" onMouseOver={handleDisplayContrato3} onMouseLeave={handleShowDefault}>{infoContratos[3].nombreContrato}</li>
-                    <li id="contrato4" class="contrato contrato4" onMouseOver={handleDisplayContrato4} onMouseLeave={handleShowDefault}>{infoContratos[4].nombreContrato}</li> 
-                    <li id="contrato5" class="contrato contrato5" onMouseOver={handleDisplayContrato5} onMouseLeave={handleShowDefault}>{infoContratos[5].nombreContrato}</li>
+                    <li id="contrato1" class="contrato contrato1" onClick={handleDisplayContrato1}>{infoContratos[1].nombreContrato}</li>
+                    <li id="contrato2" class="contrato contrato2" onClick={handleDisplayContrato2}>{infoContratos[2].nombreContrato}</li>
+                    <li id="contrato3" class="contrato contrato3" onClick={handleDisplayContrato3}>{infoContratos[3].nombreContrato}</li>
+                    <li id="contrato4" class="contrato contrato4" onClick={handleDisplayContrato4}>{infoContratos[4].nombreContrato}</li> 
+                    <li id="contrato5" class="contrato contrato5" onClick={handleDisplayContrato5}>{infoContratos[5].nombreContrato}</li>
                 </ul>
                 <ul class="contratos-displayer parent2">
                     
@@ -105,6 +146,7 @@ const OurContracts = () => {
                         flag={infoContratos[1].flag}
                         nombreContrato={infoContratos[1].nombreContrato}
                         descripcionContrato={infoContratos[1].descripcionContrato}
+                        handleContractModal={handleContractModal}
                         estilo={ displayContract.contrato1Display ===true ?  'contratoContent' : 'default' }
                     /> 
 
@@ -112,24 +154,28 @@ const OurContracts = () => {
                         flag={infoContratos[2].flag}
                         nombreContrato={infoContratos[2].nombreContrato}
                         descripcionContrato={infoContratos[2].descripcionContrato}
+                        handleContractModal={handleContractModal}
                         estilo={ displayContract.contrato2Display ===true ?  'contratoContent' : 'default' }
                     />
                     <ContratoComponent 
                         flag={infoContratos[3].flag}
                         nombreContrato={infoContratos[3].nombreContrato}
                         descripcionContrato={infoContratos[3].descripcionContrato}
+                        handleContractModal={handleContractModal}
                         estilo={ displayContract.contrato3Display ===true ?  'contratoContent' : 'default' }
                     />
                     <ContratoComponent 
                         flag={infoContratos[4].flag}
                         nombreContrato={infoContratos[4].nombreContrato}
                         descripcionContrato={infoContratos[4].descripcionContrato}
+                        handleContractModal={handleContractModal}
                         estilo={ displayContract.contrato4Display ===true ?  'contratoContent' : 'default' }
                     />
                     <ContratoComponent 
                         flag={infoContratos[5].flag}
                         nombreContrato={infoContratos[5].nombreContrato}
                         descripcionContrato={infoContratos[5].descripcionContrato}
+                        handleContractModal={handleContractModal}
                         estilo={ displayContract.contrato5Display ===true ?  'contratoContent' : 'default' }
                     /> 
                 </ul>

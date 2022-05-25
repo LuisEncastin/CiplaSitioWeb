@@ -20,7 +20,11 @@ const Footer = () => {
           <p>Dirección</p>
           <p>Av. Paseo Tollocan, #1213, Colonia El Seminario, C.P. 50170, Toluca, Estado de México.</p>
           <p>Email: contacto@ciplabogados.com</p>
-          <p>Teléfono: +52 722 2 80 97 76</p>
+          <p>Teléfonos de oficina: <br/>
+           +52 722 2 80 97 76 <br/>
+           +52 722 5 67 67 32  <br/>
+           55 62 22 14 27  <br/>
+           </p>
         </div>
         <div class="col-lg-3 py-3">
           <h5>Navegación</h5>
@@ -43,10 +47,10 @@ const Footer = () => {
           <h5>Legal</h5>
           <ul class="footer-menu">
             <li class="nav-item">
-              <a href="/terminosYCondiciones.html" target="_blank">Términos y condiciones</a>
+              <a href="/terminos-y-condiciones" target="_blank">Términos y condiciones</a>
             </li>
             <li class="nav-item">
-              <a href="/AvisoDePrivacidad.html" target="_blank">Aviso de privacidad</a>
+              <a href="/aviso-de-privacidad" target="_blank">Aviso de privacidad</a>
             </li>
           </ul>
         </div>
@@ -60,14 +64,14 @@ const Footer = () => {
           <p><strong>Copyright 2022.</strong><br />
           Website designed by<a href="/" target="_blank"> Luis Encastin</a></p>
         </div>
-        <div class="col-md-6 text-right">
+        {/* <div class="col-md-6 text-right">
           <div class="sosmed-button">
-            <a href="/"  ><span class="mai-logo-facebook-f"></span></a>
+            <a href="/"><span class="mai-logo-facebook-f"></span></a>
             <a href="/"><span class="mai-logo-twitter"></span></a>
             <a href="/"><span class="mai-logo-youtube"></span></a>
             <a href="/"><span class="mai-logo-linkedin"></span></a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </footer>

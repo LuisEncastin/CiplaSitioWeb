@@ -4,7 +4,8 @@ import React from 'react'
 
 const ServiceComponent = ({
   categoria,
-  descripcion
+  imagen,
+  descripcion,
 }) => {
   return (
     <>
@@ -14,10 +15,10 @@ const ServiceComponent = ({
         </a>
         
         <div class="service-container">
-            <div class="service-image">
-              {/* imagen */}
-            </div>
-            <div class="service-content">
+          <img src={imagen} alt="imagen" className='service-image'/>
+            {/* <div class="service-image">
+            </div> */}
+            <div class="service-content" >
               <div>
                 <a href="/servicios" id='serviceDescription'>
                   {descripcion}  

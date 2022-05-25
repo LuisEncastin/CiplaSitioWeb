@@ -24,7 +24,7 @@
     background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    margin-top: 10rem;
+    margin-top: 12.5rem;
     margin-left: 2.5rem;
     box-shadow: 0px 2px 4px 1px #adacac;
     cursor: pointer;
@@ -47,12 +47,16 @@
     box-shadow: none;
 }
 .service-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     width: 320px;
-    height: 170px;
+    height: 210px;
     border-radius: 8px 8px 0 0;
-    background-image: url('../../assets/img/pexels-rodnae-productions-5922211.jpg');
+    /* background-image: url('../../assets/img/pexels-rodnae-productions-5922211.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 .service-content{
     width: 320px;
@@ -76,10 +80,7 @@
     font-size: 1rem;
     color: #2F89FC;
 }
-/* .callToAction:hover{
-    transform: scale(1.06);
-    transition: 0.2s;
-} */
+
 
   @media (max-width:768px) {
     .servicesSection{
@@ -207,3 +208,48 @@
         background-color: #fff;
     }
 }
+
+/* LandingServiceComponent */
+
+#landingServiceComponentSection{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    padding: 6rem 20rem 0;
+    background-color: none !important;
+  }
+
+@media (max-width: 768px) {
+
+    #landingServiceComponentSection{
+        width: 100px important!;
+        padding: 7rem 1.4rem 0 !important;
+        height: 145vh;
+        z-index: 99999;
+        /* background-color: rgba(37, 36, 36, 0.714); */
+    }
+    .modalWrapper{
+        width: 330px;
+        height: 550px;
+        background-color: #ffffff;
+        color: #adacac;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 4px 6px 5px #1a1a1add;
+        padding: 0 1rem;
+    }
+    .modalWrapper .closeModalButton{
+        border-radius: 51%;
+        height: 3rem;
+        width: 3rem;
+        font-size: 0.8rem;
+        position: absolute;
+        right: 50px;
+        bottom: 1045px;
+      }
+}  

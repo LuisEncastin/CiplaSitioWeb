@@ -4,7 +4,8 @@ const ContratoComponent = ({
     flag,
     nombreContrato,
     descripcionContrato,
-    estilo
+    estilo,
+    handleContractModal,
 }) => {
   return (
     <>
@@ -12,7 +13,7 @@ const ContratoComponent = ({
             <h2>{nombreContrato}</h2>
             <hr style={{border: '0.3px solid #2F89FC', width: '70%'}} />
             <p>{descripcionContrato}</p>
-            <button onclick="alert('info del contrato')">Ver contrato.</button>
+            <button onClick={handleContractModal}>Ver contrato.</button>
         </li>   
     </>
   )

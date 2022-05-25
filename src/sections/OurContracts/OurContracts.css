@@ -1,8 +1,7 @@
 #OurContracts{
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 2rem;
-    margin: 0 0 3rem;
 }
 
 /* contract */
@@ -117,20 +116,25 @@
     grid-area: 5 / 1 / 6 / 2; }
   
   @media (max-width: 768px) {
+    .contratos-displayer .parent2{
+      height: 500px;
+    }
     #contratos .contratos-wrapper{
       display: flex; 
       flex-direction: column;
       height: 10px;
     }
     .contratos-list{
-      outline: 1px solid red; 
       width: 100%; 
-      height: 200px;
+      height: auto;
     }
     .contratos-description{
-      outline: 1px solid yellow; 
       width: 100%;
       height: 400px;
+    }
+    #OurContracts{
+      height: auto;
+      padding: 3rem 2rem 13rem;
     }
   }
   /* contratosdisplayer */
@@ -185,6 +189,159 @@
   
   @media (max-width: 768px) {
     .contratoContent{
-      height: 418px;
+      height: 450px;
+      width: 310px;
+      margin-bottom: 2rem;
+      box-shadow: 0px 2px 4px 1px #adacac;
+    }
+    .contratoContent h2{
+      font-size: 1.2rem;
+    }
+    .contratoContent p{
+      font-size: 0.8rem;
+    }
+    .contratoContent button {
+      width: 10rem;
+      height: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
+
+  /* LandingContractComponent */
+
+#landingContractComponentSection{
+  position: absolute;
+  width: 100vw;
+  z-index: 99999;
+  padding: 6rem 20rem 4rem;
+  background-color: rgba(37, 36, 36, 0.714);
+}
+.modalWrapper{
+  width: 100%;
+  height: 550px;
+  background-color: #ffffff;
+  color: #adacac;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 6px 5px #1a1a1add;
+  padding: 0 1rem;
+}
+.modalWrapper .contractImage{
+  width: 400px;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.modalMessage h1{
+  font-size: 2rem;
+}
+.modalMessage button{
+  margin: 1rem 0 0;
+  padding: 0.5rem 2.5rem;
+  border-radius: 20px;
+  background-color: #e7e4e4;
+  outline: none;
+}
+.modalMessage button:hover{
+  transition: 0.5s;
+  background-color: #ffffff;
+}
+.modalMessage button a{
+  text-decoration: none;
+}
+.modalWrapper .closeModalButton{
+  border-radius: 51%;
+  height: 3rem;
+  width: 3rem;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 340px;
+  bottom: 540px;
+}
+.modalWrapper .closeModalButton:hover{
+  background-color: lightcoral;
+  color: white;
+  transition: 0.2s;
+}
+
+.displayContractModal{
+  display:block;
+}
+.dontDisplayContractModal{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #landingContractComponentSection{
+    width: 100px important!;
+    padding: 7rem 1.4rem 0 !important;
+    height: 145vh;
+    z-index: 99999;
+    background-color: rgba(37, 36, 36, 0.714);
+  }
+  .modalWrapper{
+    width: 330px;
+    height: 550px;
+    background-color: #ffffff;
+    color: #adacac;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 6px 5px #1a1a1add;
+    padding: 0 1rem;
+  }
+  .modalWrapper .contractImage{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .modalMessage h1{
+    font-size: 2rem;
+  }
+  .modalMessage button{
+    margin: 1rem 0 0;
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    background-color: #e7e4e4;
+    outline: none;
+  }
+  .modalMessage button:hover{
+    transition: 0.5s;
+    background-color: #ffffff;
+  }
+  .modalMessage button a{
+    text-decoration: none;
+  }
+  .modalWrapper .closeModalButton{
+    border-radius: 51%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 30px;
+    bottom: 800px;
+  }
+  .modalWrapper .closeModalButton:hover{
+    background-color: lightcoral;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .displayContractModal{
+    display:block;
+  }
+  .dontDisplayContractModal{
+    display: none;
+  }
+}
