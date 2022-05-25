@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react'
+// import {useRef, useEffect} from 'react'
 
 /**
  * Custom hook para para definir el valor previo de alguna variable pasada como argumento.
@@ -7,15 +7,15 @@ import {useRef, useEffect} from 'react'
  * @returns 
  */
 
-function usePrevious(value){
+// function usePrevious(value){
 
-    const ref = useRef()
+//     const ref = useRef()
 
-    useEffect(()=>{
-      ref.current = value;
-    }, [value]);
-    return ref.current;
+//     useEffect(()=>{
+//       ref.current = value;
+//     }, [value]);
+//     return ref.current;
 
-}
+// }
 
-export default usePrevious;
+// export default usePrevious;

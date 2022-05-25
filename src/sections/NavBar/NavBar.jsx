@@ -1,12 +1,6 @@
 // hooks
 import React, {useState} from "react";
-// {useState, useEffect, useRef} 
-
-// Router
-// import { Link } from "react-router-dom";
-// import AboutUs from "../AboutUs/AboutUs";
-// import ContactUs from "../ContactUs/ContactUs";
-// import OurServices from "../OurServices/OurServices";
+import { Link } from 'react-router-dom';
 
 // assets
 import logo from '../../assets/img/CiplaLogo.jpeg';
@@ -28,7 +22,7 @@ function NavBar() {
         <nav className="navbar navbar-expand-lg navbar-light">
           <div class="container">
 
-            <a href="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
+            <Link to="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></Link>
 
             <button class="navbar-toggler" onClick={handleToggle}  data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -37,16 +31,16 @@ function NavBar() {
             <div className={`navbar-collapse ${toggle ? 'collapse-open' : 'collapse-closed'}`} id="navbarContent">
               <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
                 <li class="nav-item">
-                  <a href="/nosotros" class="nav-link">Nosotros</a>
+                  <Link to="/nosotros" class="nav-link">Nosotros</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="/servicios" class="nav-link">Servicios</a>
+                  <Link to="/servicios" class="nav-link">Servicios</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="/contratos" class="nav-link">Contratos</a>
+                  <Link to="/contratos" class="nav-link">Contratos</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="/contacto" class="nav-link">Contacto</a>
+                  <Link to="/contacto" class="nav-link">Contacto</Link>
                 </li>
                 {/* <li class="nav-item">
                   <a href="/" class="nav-link">Recursos</a>

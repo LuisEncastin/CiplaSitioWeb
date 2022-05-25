@@ -14,20 +14,26 @@ import Contratos from "../pages/Contratos/Contratos"
 import Terminos from "../sections/Terminos/Terminos";
 import AvisoPrivacidad from "../sections/AvisoPrivacidad/AvisoPrivacidad";
 
+import NavBar from "../sections/NavBar/NavBar";
+import Footer from '../sections/Footer/Footer';
+
 function App() {
   return (
     <>
     <div className="App">
     <BrowserRouter>
+    <NavBar/>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home/>} />
         <Route path="/nosotros" element={<Nosotros/>} />
         <Route path="/servicios" element={<Servicios/>} />
         <Route path="/contratos" element={<Contratos/>} />
         <Route path="/contacto" element={<Contacto/>} />
         <Route path="/terminos-y-condiciones" element={<Terminos/>} />
         <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad/>} />
+        <Route path="*" element={<Home/>} />
       </Routes>
+    <Footer/>
     </BrowserRouter>
     </div>
     </>

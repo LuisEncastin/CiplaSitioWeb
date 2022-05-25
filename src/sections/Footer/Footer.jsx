@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 // assets
 import logo from '../../assets/img/CiplaLogo.jpeg';
@@ -13,7 +14,7 @@ const Footer = () => {
     <div class="container">
       <div class="row">
         <div class="col-lg-3 py-3">
-          <a href="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></a>
+          <Link to="/" class="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></Link>
         </div>
         <div class="col-lg-3 py-3">
           <h5>Contacto</h5>
@@ -30,16 +31,16 @@ const Footer = () => {
           <h5>Navegación</h5>
           <ul class="footer-menu">
             <li class="nav-item">
-                    <a href="/nosotros" class="nav-link">Sobre nosotros</a>
+              <Link to="/nosotros" class="nav-link">Sobre nosotros</Link>
             </li>
             <li class="nav-item">
-              <a href="/servicios" class="nav-link">Servicios</a>
+              <Link to="/servicios" class="nav-link">Servicios</Link>
             </li>
             <li class="nav-item">
-              <a href="/contratos" class="nav-link">Contratos</a>
+              <Link to="/contratos" class="nav-link">Contratos</Link>
             </li>
             <li class="nav-item">
-              <a href="/contacto" class="nav-link">Contacto</a>
+              <Link to="/contacto" class="nav-link">Contacto</Link>
             </li> 
           </ul>
         </div>
@@ -47,10 +48,10 @@ const Footer = () => {
           <h5>Legal</h5>
           <ul class="footer-menu">
             <li class="nav-item">
-              <a href="/terminos-y-condiciones" target="_blank">Términos y condiciones</a>
+              <Link to="/terminos-y-condiciones" target="_blank">Términos y condiciones</Link>
             </li>
             <li class="nav-item">
-              <a href="/aviso-de-privacidad" target="_blank">Aviso de privacidad</a>
+              <Link to="/aviso-de-privacidad" target="_blank">Aviso de privacidad</Link>
             </li>
           </ul>
         </div>

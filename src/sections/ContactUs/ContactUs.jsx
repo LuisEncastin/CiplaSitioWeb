@@ -18,23 +18,23 @@ const ContactUs = () => {
             <form action="#" class="form-contact">
               <div class="row">
                 <div class="col-sm-6 py-2">
-                  <label for="name" class="fg-grey">Nombre</label>
+                  <label htmlFor="name" class="fg-grey">Nombre</label>
                   <input type="text" class="form-control" id="name" placeholder="Nombre*"/>
                 </div>
                 <div class="col-sm-6 py-2">
-                  <label for="email" class="fg-grey">Correo</label>
+                  <label htmlFor="email" class="fg-grey">Correo</label>
                   <input type="text" class="form-control" id="email" placeholder="Correo electrónico*"/>
                 </div>
                 <div class="col-sm-6 py-2">
-                  <label for="phone" class="fg-grey">Teléfono</label>
+                  <label htmlFor="phone" class="fg-grey">Teléfono</label>
                   <input type="text" class="form-control" id="phone" placeholder="Teléfono*"/>
                 </div>
                 <div class="col-12 py-2">
-                  <label for="message" class="fg-grey">Mensaje</label>
+                  <label htmlFor="message" class="fg-grey">Mensaje</label>
                   <textarea id="message" rows="8" class="form-control" placeholder="¿En qué podemos apoyarte?*"></textarea>
                 </div>
                 <div class="col-12 mt-3">
-                  <button type="submit" class="btn btn-primary px-5">Enviar</button>
+                  <button type="submit" class="btn btn-primary px-5" disabled>Enviar</button>
                 </div>
               </div>
             </form>
