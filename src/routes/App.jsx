@@ -15,7 +15,7 @@ import Terminos from "../sections/Terminos/Terminos";
 import AvisoPrivacidad from "../sections/AvisoPrivacidad/AvisoPrivacidad";
 
 import NavBar from "../sections/NavBar/NavBar";
-import Footer from '../sections/Footer/Footer';
+import Footer from './sections/Footer/Footer';
 
 function App() {
   return (

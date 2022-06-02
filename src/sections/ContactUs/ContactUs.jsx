@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 // styles
 import './ContactUs.css'
 
 const ContactUs = () => {
+
   return (
     <>
     <div class="page-section contactUsSection" id="contactUs">
@@ -15,7 +16,7 @@ const ContactUs = () => {
         </div>
         <div class="row justify-content-center mt-5">
           <div class="col-lg-8">
-            <form action="#" class="form-contact">
+            <form action="#" class="form-contact"> 
               <div class="row">
                 <div class="col-sm-6 py-2">
                   <label htmlFor="name" class="fg-grey">Nombre</label>
